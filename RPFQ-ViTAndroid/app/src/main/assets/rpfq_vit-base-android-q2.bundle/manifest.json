@@ -1,0 +1,27 @@
+{
+  "format": "rpfq_vit-android-native-bundle",
+  "format_version": 1,
+  "model_type": "rpfq_vit",
+  "variant": "rpfq_vit_base_patch16_224_q",
+  "quant_method": "complex_phase_v2",
+  "activation_quantization": false,
+  "real_quantized_inference": true,
+  "runtime_backend": "android_ndk_cpp",
+  "preferred_abi": "arm64-v8a",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "num_classes": 1000,
+  "image_size": 224,
+  "patch_size": 16,
+  "export_source": "apple_mlx_bundle",
+  "export_script": "tools/prepare_android_bundle.py",
+  "requires_custom_phase_linear": true,
+  "notes": [
+    "This bundle preserves complex_phase_v2 packed weights from the existing Apple bundle.",
+    "Do not replace this with dequantized ONNX for final demo APK."
+  ]
+}

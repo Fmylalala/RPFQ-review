@@ -1,0 +1,24 @@
+iViTMobile/ivit-small-mlx.bundle/config.json
+iViTMobile/ivit-small-mlx.bundle/model.safetensors
+iViTMobile/ivit-small-mlx.bundle/preprocess.json
+iViTMobile/ivit-small-mlx.bundle/labels.txt
+iViTMobile/ivit-small-mlx.bundle/manifest.json
+iViTMobile/ivit-base-mlx.bundle/config.json
+iViTMobile/ivit-base-mlx.bundle/model.safetensors
+iViTMobile/ivit-base-mlx.bundle/preprocess.json
+iViTMobile/ivit-base-mlx.bundle/labels.txt
+iViTMobile/ivit-base-mlx.bundle/manifest.json
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

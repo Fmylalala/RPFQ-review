@@ -1,0 +1,91 @@
+name: RPFQViTMobile
+options:
+  bundleIdPrefix: com.rpfqvit
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+  xcodeVersion: "15.0"
+
+packages:
+  mlx-swift:
+    url: https://github.com/ml-explore/mlx-swift
+    minorVersion: 0.30.6
+
+targets:
+  RPFQViTMobile:
+    type: application
+    platform: iOS
+    sources:
+      - path: RPFQViTMobile
+        includes:
+          - "*.swift"
+          - "Assets.xcassets/**"
+          - "Assets.xcassets"
+    resources:
+      - path: RPFQViTMobile/rpfq_vit-small-mlx.bundle
+        type: folder
+      - path: RPFQViTMobile/rpfq_vit-base-mlx.bundle
+        type: folder
+    settings:
+      base:
+        PRODUCT_NAME: RPFQViTMobile
+        EXECUTABLE_NAME: RPFQViTMobile
+        PRODUCT_BUNDLE_IDENTIFIER: com.rpfqvit.RPFQViTMobile
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_FILE: RPFQViTMobile/Info-iOS.plist
+        CODE_SIGN_ENTITLEMENTS: RPFQViTMobile/RPFQViTMobile-iOS.entitlements
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGNING_ALLOWED: YES
+        CODE_SIGNING_REQUIRED: YES
+        CODE_SIGN_IDENTITY: Apple Development
+        CODE_SIGN_IDENTITY[sdk=iphoneos*]: Apple Development
+        PROVISIONING_PROFILE_SPECIFIER: ""
+        PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]: ""
+    dependencies:
+      - package: mlx-swift
+        product: MLX
+      - package: mlx-swift
+        product: MLXNN
+      - package: mlx-swift
+        product: MLXFast
+    entitlements:
+      path: RPFQViTMobile/RPFQViTMobile-iOS.entitlements
+
+  RPFQViTMobile-macOS:
+    type: application
+    platform: macOS
+    sources:
+      - path: RPFQViTMobile
+        includes:
+          - "*.swift"
+          - "Assets.xcassets/**"
+          - "Assets.xcassets"
+    resources:
+      - path: RPFQViTMobile/rpfq_vit-small-mlx.bundle
+        type: folder
+      - path: RPFQViTMobile/rpfq_vit-base-mlx.bundle
+        type: folder
+    settings:
+      base:
+        PRODUCT_NAME: RPFQViTMobile
+        PRODUCT_BUNDLE_IDENTIFIER: com.rpfqvit.RPFQViTMobile.macOS
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.9"
+        INFOPLIST_FILE: RPFQViTMobile/Info-macOS.plist
+        CODE_SIGN_ENTITLEMENTS: RPFQViTMobile/RPFQViTMobile-macOS.entitlements
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+        ARCHS: arm64
+    dependencies:
+      - package: mlx-swift
+        product: MLX
+      - package: mlx-swift
+        product: MLXNN
+      - package: mlx-swift
+        product: MLXFast
+    entitlements:
+      path: RPFQViTMobile/RPFQViTMobile-macOS.entitlements

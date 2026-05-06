@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Training outputs
+output/
+outputs/
+checkpoints/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.safetensors
+
+# Logs and temporary files
+*.log
+logs/
+wandb/
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,30 @@
+model: rpfq_swin_tiny_patch4_window7_224_q
+model_kwargs:
+  quant_method_u: complex_phase_v2
+  quant_method_w: complex_phase_v2
+  enable_act_quant: true
+  act_num_bits: 4
+  enable_rotation: false
+  quant_group_size: 32
+
+epochs: 300
+batch_size: 64
+opt: adamw
+lr: 0.0005
+weight_decay: 0.05
+sched: cosine
+warmup_epochs: 5
+
+reprob: 0.25
+remode: pixel
+mixup: 0.8
+cutmix: 1.0
+aa: rand-m9-mstd0.5-inc1
+drop_path: 0.1
+color_jitter: 0.1
+hflip: 0.5
+clip_grad: 1.0
+model_ema: true
+
+output: ./output/rpfq-swin-tiny-q2a4
+experiment: rpfq-swin-tiny-q2a4

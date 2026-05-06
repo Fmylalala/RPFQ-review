@@ -1,0 +1,2 @@
+# Optional dependency for quant_models/kernel.py Triton/CUDA benchmark experiments.
+triton

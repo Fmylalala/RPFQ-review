@@ -1,0 +1,15 @@
+.gradle/
+.gradle-local/*.zip
+app/build/
+build/
+local.properties
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

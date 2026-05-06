@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041AEC76CD2E10CCF4D95CEC /* RPFQViTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB3D9357B93C8EF704409B /* RPFQViTModel.swift */; };
+		0558EFCCD885792F200C0A31 /* RPFQViTMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3480D709388C73059616E /* RPFQViTMobileApp.swift */; };
+		05943236B6A1F841EAE29F76 /* InferenceRuntimeSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43282C00166ED192B8EF2EC1 /* InferenceRuntimeSupport.swift */; };
+		061695D8E65D42C82538121B /* RPFQViTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFB3D9357B93C8EF704409B /* RPFQViTModel.swift */; };
+		08E48587E1239E6C875CD6EE /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB06E6691B820D2EE561AE /* PlatformImage.swift */; };
+		23C51C29AFFF7E868B98B585 /* ContentView+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5469C9A39BA1E83D915CD /* ContentView+iOS.swift */; };
+		4285EB15EF9C92104AE444FE /* ContentView+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C8A5E2A800507722EFA38 /* ContentView+macOS.swift */; };
+		467B323CA59B6C4866D911E3 /* RPFQViTMetalKernels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C5F6F5B52B246F032D588 /* RPFQViTMetalKernels.swift */; };
+		468B9B13629860FBE77D292B /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939640003D40F685E024D874 /* ModelManager.swift */; };
+		4832FB9C1946C6A6C853FD54 /* PlatformImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB06E6691B820D2EE561AE /* PlatformImage.swift */; };
+		558D156E1D4D462ED39D773F /* MLXFast in Frameworks */ = {isa = PBXBuildFile; productRef = 370C8F51A8B110EA1B2765B8 /* MLXFast */; };
+		5662DA1193287A91C7E6F5BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B376AEA38D1CCD3F6FD0 /* ContentView.swift */; };
+		598744563DCCB200706004ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5B376AEA38D1CCD3F6FD0 /* ContentView.swift */; };
+		5B85AC5BA9986A50DAB35F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A001C5E6CBE21D22183DBA44 /* Assets.xcassets */; };
+		68EEF56CB088D5EBD6814FAD /* RPFQViTMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE3480D709388C73059616E /* RPFQViTMobileApp.swift */; };
+		71D9D7BEF421578164AD9878 /* InferenceRuntimeSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43282C00166ED192B8EF2EC1 /* InferenceRuntimeSupport.swift */; };
+		7DA2F39290B84A8514D2127C /* MLXFast in Frameworks */ = {isa = PBXBuildFile; productRef = 4FA23BB78C31B27EE97B94B3 /* MLXFast */; };
+		9833EAD785D5B1B799563AE1 /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB990B88CC40E982FCA624 /* ImagePreprocessor.swift */; };
+		9B0D1E64E1C9CD49D8869658 /* RPFQViTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46F97EFBDD2E2D9032DF7D /* RPFQViTConfiguration.swift */; };
+		9E0A1C5B2CB2A171DEA5650B /* RPFQViTMetalKernels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C5F6F5B52B246F032D588 /* RPFQViTMetalKernels.swift */; };
+		9F019D8AB4ADF219AF9486E1 /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB990B88CC40E982FCA624 /* ImagePreprocessor.swift */; };
+		BA841C53F2D8407220A9DFE0 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939640003D40F685E024D874 /* ModelManager.swift */; };
+		C05E9B69A75D9FDA8185F7D9 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05334E7F68771A7BC916EFD6 /* Predictor.swift */; };
+		C06196AC0B795D5E039716B9 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05334E7F68771A7BC916EFD6 /* Predictor.swift */; };
+		D03DB355FB5C8797FFEE5076 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62ACB137066D3703873EC2 /* MLX */; };
+		D9D05B5E94588AAE14327E77 /* ContentView+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5469C9A39BA1E83D915CD /* ContentView+iOS.swift */; };
+		DF59BEA1B6D7122CE1EFCC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A001C5E6CBE21D22183DBA44 /* Assets.xcassets */; };
+		E4327C1D2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4327C1C2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle */; };
+		E4327C1E2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4327C1C2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle */; };
+		E65ABC6F7E788D3BFB446AD1 /* RPFQViTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46F97EFBDD2E2D9032DF7D /* RPFQViTConfiguration.swift */; };
+		E78196A35658778B6925477C /* ContentView+macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C8A5E2A800507722EFA38 /* ContentView+macOS.swift */; };
+		F7789C134FE9C81231D571C2 /* MLXNN in Frameworks */ = {isa = PBXBuildFile; productRef = 1974440CA9B9633F0A970633 /* MLXNN */; };
+		F8D00A3626B4DDD55F736410 /* MLXNN in Frameworks */ = {isa = PBXBuildFile; productRef = 17870876307DB58C9402A54E /* MLXNN */; };
+		FA76EB6B91A9820DD270E187 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = 9D6C8CE49EF4040E69B972BF /* MLX */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05334E7F68771A7BC916EFD6 /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		3BA5469C9A39BA1E83D915CD /* ContentView+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+iOS.swift"; sourceTree = "<group>"; };
+		43282C00166ED192B8EF2EC1 /* InferenceRuntimeSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InferenceRuntimeSupport.swift; sourceTree = "<group>"; };
+		4DFB3D9357B93C8EF704409B /* RPFQViTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPFQViTModel.swift; sourceTree = "<group>"; };
+		52AB990B88CC40E982FCA624 /* ImagePreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessor.swift; sourceTree = "<group>"; };
+		6DFB06E6691B820D2EE561AE /* PlatformImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformImage.swift; sourceTree = "<group>"; };
+		86198624293785A5C961D469 /* RPFQViTMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPFQViTMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		939640003D40F685E024D874 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		9B4C8A5E2A800507722EFA38 /* ContentView+macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+macOS.swift"; sourceTree = "<group>"; };
+		9F147467A5EA25EBA5F2E186 /* RPFQViTMobile-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "RPFQViTMobile-macOS.app"; path = RPFQViTMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A001C5E6CBE21D22183DBA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEE3480D709388C73059616E /* RPFQViTMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPFQViTMobileApp.swift; sourceTree = "<group>"; };
+		E4327C1C2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "rpfq_vit-base-mlx.bundle"; sourceTree = "<group>"; };
+		EB46F97EFBDD2E2D9032DF7D /* RPFQViTConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPFQViTConfiguration.swift; sourceTree = "<group>"; };
+		EF3C5F6F5B52B246F032D588 /* RPFQViTMetalKernels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPFQViTMetalKernels.swift; sourceTree = "<group>"; };
+		FDF5B376AEA38D1CCD3F6FD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AFDB5802EBB84CBECA40865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA76EB6B91A9820DD270E187 /* MLX in Frameworks */,
+				F7789C134FE9C81231D571C2 /* MLXNN in Frameworks */,
+				558D156E1D4D462ED39D773F /* MLXFast in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5D512A5D78533840A770C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03DB355FB5C8797FFEE5076 /* MLX in Frameworks */,
+				F8D00A3626B4DDD55F736410 /* MLXNN in Frameworks */,
+				7DA2F39290B84A8514D2127C /* MLXFast in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82BE6B06827AD049E63F8A21 /* RPFQViTMobile */ = {
+			isa = PBXGroup;
+			children = (
+				E4327C1C2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle */,
+				A001C5E6CBE21D22183DBA44 /* Assets.xcassets */,
+				FDF5B376AEA38D1CCD3F6FD0 /* ContentView.swift */,
+				3BA5469C9A39BA1E83D915CD /* ContentView+iOS.swift */,
+				9B4C8A5E2A800507722EFA38 /* ContentView+macOS.swift */,
+				52AB990B88CC40E982FCA624 /* ImagePreprocessor.swift */,
+				43282C00166ED192B8EF2EC1 /* InferenceRuntimeSupport.swift */,
+				EB46F97EFBDD2E2D9032DF7D /* RPFQViTConfiguration.swift */,
+				EF3C5F6F5B52B246F032D588 /* RPFQViTMetalKernels.swift */,
+				AEE3480D709388C73059616E /* RPFQViTMobileApp.swift */,
+				4DFB3D9357B93C8EF704409B /* RPFQViTModel.swift */,
+				939640003D40F685E024D874 /* ModelManager.swift */,
+				6DFB06E6691B820D2EE561AE /* PlatformImage.swift */,
+				05334E7F68771A7BC916EFD6 /* Predictor.swift */,
+			);
+			path = RPFQViTMobile;
+			sourceTree = "<group>";
+		};
+		A6E9C3F56568DF63045B0F27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F147467A5EA25EBA5F2E186 /* RPFQViTMobile-macOS.app */,
+				86198624293785A5C961D469 /* RPFQViTMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F7754F31922DA36A1F88AE = {
+			isa = PBXGroup;
+			children = (
+				82BE6B06827AD049E63F8A21 /* RPFQViTMobile */,
+				A6E9C3F56568DF63045B0F27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8D3B0C646DC7F05B84C103 /* RPFQViTMobile-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7E683E1979BC11540CC785 /* Build configuration list for PBXNativeTarget "RPFQViTMobile-macOS" */;
+			buildPhases = (
+				4E2068A822994A88CF84F7AC /* Sources */,
+				9322ED4E33887BAC30498D61 /* Resources */,
+				5D5D512A5D78533840A770C6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPFQViTMobile-macOS";
+			packageProductDependencies = (
+				8D62ACB137066D3703873EC2 /* MLX */,
+				17870876307DB58C9402A54E /* MLXNN */,
+				4FA23BB78C31B27EE97B94B3 /* MLXFast */,
+			);
+			productName = "RPFQViTMobile-macOS";
+			productReference = 9F147467A5EA25EBA5F2E186 /* RPFQViTMobile-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA968E7A4CC2F16932D7526A /* RPFQViTMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3C5E0EEB15A1ADA831339C /* Build configuration list for PBXNativeTarget "RPFQViTMobile" */;
+			buildPhases = (
+				2BC55CBCD0A0DC9A30F149F0 /* Sources */,
+				EA4B5782FE9E3E347B68477E /* Resources */,
+				5AFDB5802EBB84CBECA40865 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPFQViTMobile;
+			packageProductDependencies = (
+				9D6C8CE49EF4040E69B972BF /* MLX */,
+				1974440CA9B9633F0A970633 /* MLXNN */,
+				370C8F51A8B110EA1B2765B8 /* MLXFast */,
+			);
+			productName = RPFQViTMobile;
+			productReference = 86198624293785A5C961D469 /* RPFQViTMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2995FD006A2BBB5C6FD385F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FA968E7A4CC2F16932D7526A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1599E3D18269E988AE35E5FB /* Build configuration list for PBXProject "RPFQViTMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F1F7754F31922DA36A1F88AE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A6E9C3F56568DF63045B0F27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA968E7A4CC2F16932D7526A /* RPFQViTMobile */,
+				BB8D3B0C646DC7F05B84C103 /* RPFQViTMobile-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9322ED4E33887BAC30498D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF59BEA1B6D7122CE1EFCC2E /* Assets.xcassets in Resources */,
+				E4327C1D2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4B5782FE9E3E347B68477E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B85AC5BA9986A50DAB35F17 /* Assets.xcassets in Resources */,
+				E4327C1E2F923A61000DF1DF /* rpfq_vit-base-mlx.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC55CBCD0A0DC9A30F149F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D05B5E94588AAE14327E77 /* ContentView+iOS.swift in Sources */,
+				E78196A35658778B6925477C /* ContentView+macOS.swift in Sources */,
+				598744563DCCB200706004ED /* ContentView.swift in Sources */,
+				E65ABC6F7E788D3BFB446AD1 /* RPFQViTConfiguration.swift in Sources */,
+				467B323CA59B6C4866D911E3 /* RPFQViTMetalKernels.swift in Sources */,
+				061695D8E65D42C82538121B /* RPFQViTModel.swift in Sources */,
+				9833EAD785D5B1B799563AE1 /* ImagePreprocessor.swift in Sources */,
+				05943236B6A1F841EAE29F76 /* InferenceRuntimeSupport.swift in Sources */,
+				468B9B13629860FBE77D292B /* ModelManager.swift in Sources */,
+				4832FB9C1946C6A6C853FD54 /* PlatformImage.swift in Sources */,
+				C05E9B69A75D9FDA8185F7D9 /* Predictor.swift in Sources */,
+				68EEF56CB088D5EBD6814FAD /* RPFQViTMobileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E2068A822994A88CF84F7AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C51C29AFFF7E868B98B585 /* ContentView+iOS.swift in Sources */,
+				4285EB15EF9C92104AE444FE /* ContentView+macOS.swift in Sources */,
+				5662DA1193287A91C7E6F5BE /* ContentView.swift in Sources */,
+				9B0D1E64E1C9CD49D8869658 /* RPFQViTConfiguration.swift in Sources */,
+				9E0A1C5B2CB2A171DEA5650B /* RPFQViTMetalKernels.swift in Sources */,
+				041AEC76CD2E10CCF4D95CEC /* RPFQViTModel.swift in Sources */,
+				9F019D8AB4ADF219AF9486E1 /* ImagePreprocessor.swift in Sources */,
+				71D9D7BEF421578164AD9878 /* InferenceRuntimeSupport.swift in Sources */,
+				BA841C53F2D8407220A9DFE0 /* ModelManager.swift in Sources */,
+				08E48587E1239E6C875CD6EE /* PlatformImage.swift in Sources */,
+				C06196AC0B795D5E039716B9 /* Predictor.swift in Sources */,
+				0558EFCCD885792F200C0A31 /* RPFQViTMobileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20749FE975969EA76A9503DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RPFQViTMobile/RPFQViTMobile-macOS.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RPFQViTMobile/Info-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpfqvit.RPFQViTMobile.macOS;
+				PRODUCT_NAME = RPFQViTMobile;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		65567397A8CD928B8FB677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = "RPFQViTMobile/RPFQViTMobile-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RZHQWCN39T;
+				EXECUTABLE_NAME = RPFQViTMobile;
+				INFOPLIST_FILE = "RPFQViTMobile/Info-iOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpfqvit.RPFQViTMobile;
+				PRODUCT_NAME = RPFQViTMobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C2BB74DCA9DB85B3778F918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		953D394BAC3952FAA22A9981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_ENTITLEMENTS = "RPFQViTMobile/RPFQViTMobile-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				EXECUTABLE_NAME = RPFQViTMobile;
+				INFOPLIST_FILE = "RPFQViTMobile/Info-iOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpfqvit.RPFQViTMobile;
+				PRODUCT_NAME = RPFQViTMobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C5A4B30295430A7965E57D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E5453F5FDAC4D468B74A9B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RPFQViTMobile/RPFQViTMobile-macOS.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = "RPFQViTMobile/Info-macOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpfqvit.RPFQViTMobile.macOS;
+				PRODUCT_NAME = RPFQViTMobile;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1599E3D18269E988AE35E5FB /* Build configuration list for PBXProject "RPFQViTMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C2BB74DCA9DB85B3778F918 /* Debug */,
+				C5A4B30295430A7965E57D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E7E683E1979BC11540CC785 /* Build configuration list for PBXNativeTarget "RPFQViTMobile-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5453F5FDAC4D468B74A9B49 /* Debug */,
+				20749FE975969EA76A9503DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E3C5E0EEB15A1ADA831339C /* Build configuration list for PBXNativeTarget "RPFQViTMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65567397A8CD928B8FB677DD /* Debug */,
+				953D394BAC3952FAA22A9981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.30.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17870876307DB58C9402A54E /* MLXNN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXNN;
+		};
+		1974440CA9B9633F0A970633 /* MLXNN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXNN;
+		};
+		370C8F51A8B110EA1B2765B8 /* MLXFast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXFast;
+		};
+		4FA23BB78C31B27EE97B94B3 /* MLXFast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXFast;
+		};
+		8D62ACB137066D3703873EC2 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+		9D6C8CE49EF4040E69B972BF /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FD357612689813CA06B17B5 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E2995FD006A2BBB5C6FD385F /* Project object */;
+}
