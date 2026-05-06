@@ -12,22 +12,14 @@ try:
 except ImportError:
     from timm.models.registry import register_model
 
-from .quant_i import QATLinearComplexPhase
-
-
-ALLOWED_COMPLEX_PHASE_METHODS = (
-    "complex_phase_v1",
-    "complex_phase_v2",
-    "complex_phase_v3",
-    "complex_phase_v4",
-)
+from .quant_i import QATLinearComplexPhase, SUPPORTED_QUANT_METHODS
 
 
 def _validate_quant_method(method: str) -> None:
-    if method not in ALLOWED_COMPLEX_PHASE_METHODS:
+    if method not in SUPPORTED_QUANT_METHODS:
         raise ValueError(
             f"Unsupported DeiT complex quantization method: {method}. "
-            f"Allowed methods: {ALLOWED_COMPLEX_PHASE_METHODS}"
+            f"Allowed methods: {SUPPORTED_QUANT_METHODS}"
         )
 
 
